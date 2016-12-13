@@ -1,2 +1,2 @@
 # Implementations
-Standard algoritms implementation
+Standard algorithms implementations
