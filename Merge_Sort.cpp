@@ -6,7 +6,6 @@ void merge (vector <int> &a,int start,int mid, int end){  //pass by reference
     
     int n1 = mid -start + 1;
     int n2 = end - mid;
-  
     int L1[n1], L2[n2];
   
  for (int i = 0; i < n1; i++)
@@ -19,31 +18,24 @@ int i=0,j=0,index = start;
     while(i<n1 && j<n2){
     if(L1[i] <= L2[j]){
         a[index] = L1[i] ;
-        i++;
-        
+        i++;    
     }
     else {
         a[index] = L2[j];
-         j++;
-         
+         j++;         
     }
     index++;
     }
-    
         while(j<n2){
             a[index] = L2[j];
             index++; 
             j++;
         }
-    
-    
         while(i<n1){
             a[index] = L1[i];
             index++; 
             i++;
         }
-    
-    
 }
 
 void mergeSort (vector <int> &a,int start, int end){ //pass by reference
@@ -55,12 +47,10 @@ void mergeSort (vector <int> &a,int start, int end){ //pass by reference
   
     mergeSort (a,start,mid);
     mergeSort (a,mid+1,end);
-    
     merge(a,start,mid,end);
- 
-    }
-    
+    }    
 }
+
 int main() {
 	vector <int> a;
 	int n;
