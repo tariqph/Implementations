@@ -1,5 +1,5 @@
 # Implementations
 ### Standard algorithms implementations ###
 * Merge_Sort
-* NoOfRecursions : Number of Inversions in an array
+* NoOfInversions : Counting the number of inversions in an array
  
